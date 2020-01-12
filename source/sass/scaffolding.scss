@@ -44,6 +44,19 @@
 }
 
 body {
+  // background-repeat: no-repeat;
+  // background-position: 50% 0;
+  // background-image: url("../img/Desktop.jpg");
+
+  // @media (max-width: 1199px) {
+  //   background-image: url("../img/Tablet.jpg");
+  // }
+
+
+  // @media (max-width: 767px) {
+  //   background-image: url("../img/Phone.jpg");
+  // }
+
   display: flex;
   flex-direction: column;
   min-height: 100vh;

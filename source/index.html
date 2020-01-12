@@ -15,8 +15,287 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+  <div style="display: none">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+  <header class="header">
+    <div class="header__wrapper container">
+      <div class="header-top">
+        <div class="header-top__logo">
+          <svg width="89" height="20"  viewBox="0 0 89 20">
+            <use xlink:href="#icon-logo"></use>
+          </svg>
+        </div>
+        <div class="header-top__phone">
+          <a href="tel:88005555555">8-800-555-55-55</a>
+        </div>
+      </div>
+      <div class="header-bottom banner">
+        <div class="banner__description">
+          <span>Омск</span>
+          <h1>Фитнес центр</h1>
+          <p>Тренажёрный зал Групповые занятия Кардио-зона</p>
+          <div class="banner__description-button">
+            <a href="#">Купить абонемент</a>
+          </div>
+        </div>
+        <div class="banner__image image">
+
+          <div class="image__desktop">
+              <picture>
+                <source type="image/webp" srcset="img/superman-desktop.webp, img/superman-desktop@2x.webp 2x">
+                <!-- 1x: 500px, 2x: 1000px -->
+                <img src="img/superman-desktop.jpg" width="500" height="556"
+                  srcset="img/superman-desktop.jpg 1x, img/superman-desktop@2x.jpg 2x"
+                  alt="Спортивный мужчина">
+              </picture>
+            </div>
+
+            <div class="image__tablet">
+              <picture>
+                <source type="image/webp" srcset="img/superman-tablet.webp, img/superman-tablet@2x.webp 2x">
+                <!-- 1x: 324px, 2x: 648px -->
+                <img src="img/superman-tablet.jpg" width="324" height="390"
+                srcset="img/superman-tablet.jpg 1x, img/superman-tablet@2x.jpg 2x"
+                alt="Спортивный мужчина">
+              </picture>
+            </div>
+
+        </div>
+
+        <div class="banner__social">
+          <ul>
+            <li>
+              <a href="#">
+                <span class="visually-hidden">Мы на Фейсбуке</span>
+                <svg width="13" height="9">
+                  <use xlink:href="#icon-fb-header"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+                <svg width="14" height="9">
+                  <use xlink:href="#icon-vk-header"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="visually-hidden">Мы в Инстаграме</span>
+                <svg width="11" height="9">
+                  <use xlink:href="#icon-ig-header"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="gym">
+      <div class="gym__wrapper container">
+        <div class="gym__descriptions">
+          <h2>Тренажерный зал</h2>
+          <span>Просторный зал площадью 900 кв/м</span>
+          <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов</p>
+          <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </p>
+        </div>
+        <div class="gym__image">
+          <div class="gym__image-desktop">
+            <picture>
+              <source type="image/webp" srcset="img/gym-desktop.webp, img/gym-desktop@2x.webp 2x">
+              <!-- 1x: 660px, 2x: 1320px -->
+              <img src="img/gym-desktop.jpg" width="660" height="401"
+                srcset="img/gym-desktop.jpg 1x, img/gym-desktop@2x.jpg 2x"
+                alt="Тренажерный зал">
+            </picture>
+          </div>
+        </div>
+        <div class="gim__video">
+          <div class="gim__video-image">
+          </div>
+          <div class="gim__video-button">
+            <button type="button">Play</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="season-ticket">
+      <div class="season-ticket__wrapper container">
+        <h2>Абонементы</h2>
+          <div>
+            <ul>
+              <li>1 месяц</li>
+              <li>6 месяца</li>
+              <li>12 месяцев</li>
+            </ul>
+          </div>
+          <div class="season-ticket__suggestions suggestions">
+            <div class="suggestions__item">
+              <div class="suggestions__item-wrapper">
+                <h3>С тренером</h3>
+                <span>12 занятий</span>
+                <div class="suggestions__item-prise">
+                  <span>5000</span>
+                  <svg></svg>
+              </div>
+              <div class="suggestions__item-button">
+                <a href="#">Купить абонемент</a>
+              </div>
+            </div>
+          </div>
+          <div class="suggestions__item">
+            <div class="suggestions__item-wrapper">
+              <h3>Дневной</h3>
+              <span>с 8:00 до 17:00</span>
+              <div class="suggestions__item-prise">
+                <span>1700</span>
+                <svg></svg>
+              </div>
+              <div class="suggestions__item-button">
+                <a href="#">Купить абонемент</a>
+              </div>
+            </div>
+          </div>
+          <div class="suggestions__item">
+            <div class="suggestions__item-wrapper">
+              <h3>Полный День</h3>
+              <span>с 8:00 до 22:00</span>
+              <div class="suggestions__item-prise">
+                <span>2700</span>
+                <svg></svg>
+              </div>
+              <div class="suggestions__item-button">
+                <a href="#">Купить абонемент</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="games"></section>
+    <section class="coachs"></section>
+    <section class="advantage"></section>
+    <section class="stock"></section>
+    <section class="comments"></section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <section class="footer__form form">
+        <div class="form__wrapper">
+          <form method="post" enctype="multipart/form-data" autocomplete="off">
+          <h2>Бесплатное занятие</h2>
+            <label for="user-name">
+              <input type="text" name="user-name" id="user-name" placeholder="Имя">
+            </label>
+
+            <label for="user-phone">
+              <input type="tel" name="user-phone" id="user-phone" placeholder="Телефон">
+            </label>
+            <div class="form__button">
+              <button type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="footer__contacts contacts">
+        <div class="contacts__wrapper">
+          <div class="contacts__information">
+          <h2>Контакты</h2>
+            <div class="contacts__list">
+              <ul>
+                <li>
+                  <h3>Адрес:</h3>
+                  <p>г. Омск, ул. 60 лет Октября, 7</p>
+                </li>
+              <li>
+                <h3>График работы:</h3>
+                <p>Пн-Вс: с 8:00 до 22:00</p>
+              </li>
+              </ul>
+              <ul>
+                <li>
+                  <h3>Телефон:</h3>
+                  <a href="tel:88005555555">8-800-555-55-55</a>
+                </li>
+                <li>
+                  <h3>Email:</h3>
+                  <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="footer__bottom">
+      <h2 class="visually-hidden">Навигация</h2>
+      <div class="footer__bottom-wrapper container">
+        <div class="footer__logo">
+          <svg width="89" height="20"  viewBox="0 0 89 20">
+            <use xlink:href="#icon-logo"></use>
+          </svg>
+        </div>
+        <div class="footer__bottom-navigation footer__bottom-navigation--desktop">
+          <ul>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Абонементы</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Тренеры</a></li>
+            <li><a href="#">Расписание</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__bottom-navigation footer__bottom-navigation--mobile">
+          <ul>
+            <li>
+              <a>
+                <svg width="68" height="15"  viewBox="0 0 89 20">
+                  <use xlink:href="#icon-logo"></use>
+                </svg>
+              </a>
+            </li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Тренеры</a></li>
+            <li><a href="#">Абонементы</a></li>
+            <li><a href="#">Расписание</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__bottom-social">
+          <ul>
+            <li class="footer__bottom-vk">
+              <a href="#">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+                  <svg width="32" height="17">
+                    <use xlink:href="#icon-vk-footer"></use>
+                  </svg>
+              </a>
+            </li>
+            <li class="footer__bottom-insta">
+              <a href="#">
+                <span class="visually-hidden">Мы в Инстаграмме</span>
+                <svg width="27" height="27">
+                  <use xlink:href="#icon-insta-footer"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__bottom-fb">
+              <a href="#">
+                <span class="visually-hidden">Мы на Фейсбуке</span>
+                <svg width="14" height="27">
+                  <use xlink:href="#icon-fb-footer"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </footer>
 </body>
 </html>
