@@ -41,7 +41,7 @@
 
 .contacts h2 {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 44px;
   padding: 0;
 
   width: 100%;
@@ -152,10 +152,45 @@
 }
 
 .contacts__list ul {
+  display: flex;
   margin: 0;
   padding: 0;
+
+  width: 50%;
+
+  flex-direction: column;
   list-style: none;
+
+  &:last-of-type {
+    padding-left: 23%;
+
+    @media (max-width: $tablet-width) {
+      padding-left: 19%;
+    }
+
+    @media (max-width: $mobile-width) {
+      padding-left: 0;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
+
+// .contacts__list ul {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+
+//   &:first-of-type {
+//     margin-right: 120px;
+
+//     @media (max-width: $tablet-width) {
+//       margin-right: 21%;
+//     }
+//   }
+// }
 
 .contacts__list p,
 .contacts__list a {

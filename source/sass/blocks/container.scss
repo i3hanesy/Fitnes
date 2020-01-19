@@ -5,13 +5,13 @@
   // padding-left: 103px;
 
   @media (max-width: $tablet-width) {
-    // width: 768px;
+    width: 100%;
     padding-right: 45px;
     padding-left: 45px;
   }
 
   @media (max-width: $mobile-width) {
-    // width: 320px;
+    width: 100%;
     padding-right: 15px;
     padding-left: 15px;
   }

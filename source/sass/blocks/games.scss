@@ -1,0 +1,36 @@
+.games {
+  padding-top: 115px;
+  padding-bottom: 80px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 100px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+}
+
+.games__wrapper {
+  display: flex;
+
+  justify-content: center;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.games__image img {
+  display: block;
+
+  @media (max-width: $tablet-width) {
+    min-width: 386px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 290px;
+  }
+}

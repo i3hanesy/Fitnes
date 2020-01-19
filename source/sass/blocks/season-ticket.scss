@@ -1,3 +1,234 @@
 .season-ticket {
+  padding-top: 115px;
+  padding-bottom: 125px;
+
   background-color: $gray;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 98px;
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 68px;
+    padding-bottom: 35px;
+  }
+}
+
+.season-ticket__wrapper {
+  position: relative;
+  display: flex;
+  padding-left: 103px;
+  padding-right: 103px;
+
+  max-width: 1366px;
+  flex-direction: column;
+  align-items: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    right: -184px;
+    bottom: -270px;
+
+    width: 470px;
+    height: 494px;
+
+    background-image: url("../img/weight-desktop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/weight-desktop@2x.png");
+      background-repeat: no-repeat;
+    }
+
+    z-index: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-right: 45px;
+    padding-left: 45px;
+    width: 100%;
+
+    &::after {
+
+      width: 347px;
+      height: 444px;
+
+      right: 0;
+      bottom: -185px;
+
+      background-image: url("../img/weight-tablet.png");
+      background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/weight-tablet@2x.png");
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 15px;
+    padding-left: 15px;
+
+    width: 100%;
+
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.season-ticket h2 {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  font-family: "Bebas-Neue", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+
+  color: $dark-blue;
+
+  text-transform: uppercase;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 14px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .season-ticket__terms {
+    display: flex;
+    width: 65%;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
+  }
+}
+
+.season-ticket__terms ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+
+.season-ticket__terms li {
+  padding-right: 23px;
+  padding-left: 23px;
+
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+
+  &:first-of-type {
+    padding-left: 0;
+  }
+
+  &:last-of-type {
+    padding-right: 0;
+  }
+}
+
+
+.season-ticket__terms a {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-size: 20px;
+  line-height: 150%;
+
+  color: rgba(16, 38, 84, 0.5);
+
+  cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    font-size: 18px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 10px;
+    padding-bottom: 11px;
+    font-size: 16px;
+  }
+}
+
+.season-ticket__terms a::after {
+  content: "";
+  position: absolute;
+
+  bottom: -2px;
+  left: 0;
+
+  height: 2px;
+  width: 100%;
+  background-color: transparent;
+
+  transition: all 0.3s ease;
+}
+
+.season-ticket__terms a:hover,
+.season-ticket__terms a:focus {
+  position: relative;
+
+  color: $dark-blue;
+
+  &::after {
+    background-color: #d10a42;
+    opacity: 1;
+  }
+}
+
+.season-ticket__terms .active {
+  position: relative;
+
+  color: $dark-blue;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    bottom: -2px;
+    left: 0;
+
+    height: 2px;
+    width: 100%;
+    background-color: #d10a42;
+  }
+}
+
+.season-ticket__suggestions {
+  padding-top: 38px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 43px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 35px;
+  }
 }

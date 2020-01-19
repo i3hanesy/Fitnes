@@ -1,0 +1,124 @@
+.coachs {
+  padding-top: 37px;
+  padding-bottom: 118px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 16px;
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+}
+
+.coachs__wrapper {
+  max-width: 1366px;
+  // padding-left: 84px;
+  // padding-right: 84px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.coachs__wrapper h2 {
+  margin: 0;
+  margin-bottom: 55px;
+  padding: 0;
+
+  font-family: "Bebas-Neue", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.04em;
+
+  color: $dark-blue;
+
+  text-transform: uppercase;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 44px;
+
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 46px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.coachs__slider {
+  width: 94.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: $tablet-width) {
+    width: 91%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.coachs__slider .slider__items {
+  width: 93%;
+
+  @media (max-width: $tablet-width) {
+    width: 86%;
+    overflow: hidden;
+  }
+}
+
+.coachs__slider .slider__wrapper {
+  min-width: 1055px;
+
+  justify-content: space-around;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    min-width: auto;
+    justify-content: space-between;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    justify-content: normal;
+  }
+}
+
+.coachs__slider .slider__item {
+  flex: 0 0 25%;
+  max-width: 25%;
+
+  @media (max-width: $tablet-width) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.coachs__slider .slider__control:hover::before,
+.coachs__slider .slider__control:focus::before {
+  border-color: $dark-blue;
+
+  @media (max-width: $mobile-width) {
+    border-color: #afafaf;
+  }
+}

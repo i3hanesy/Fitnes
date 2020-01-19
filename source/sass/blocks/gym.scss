@@ -1,17 +1,17 @@
 .gym {
   padding-top: 120px;
-  padding-bottom: 100px;
+  padding-bottom: 120px;
 
   background-color: $white;
 
   @media (max-width: $tablet-width) {
     padding-top: 54px;
-    padding-bottom: 81px;
+    padding-bottom: 100px;
   }
 
   @media (max-width: $mobile-width) {
     padding-top: 23px;
-    padding-bottom: 51px;
+    padding-bottom: 70px;
   }
 }
 
@@ -168,7 +168,7 @@
   }
 }
 
-.gim__video {
+.gym__video {
   position: absolute;
 
   margin-left: -143px;
@@ -237,7 +237,7 @@
   }
 }
 
-.gim__video-button button {
+.gym__video-button button {
   position: absolute;
   margin-left: -50px;
   margin-top: -50px;
@@ -257,10 +257,12 @@
   background: transparent;
   background-image: url("../img/play-video.png");
   background-repeat: no-repeat;
+  background-size: contain;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/play-video@2x.png");
     background-repeat: no-repeat;
+    background-size: contain;
   }
 
   &:hover,
