@@ -1,24 +1,33 @@
 .suggestions {
   display: flex;
-  width: 100%;
+  width: 1160px;
 
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 
   @media (max-width: $tablet-width) {
+    width: 100%;
     flex-direction: column;
     align-items: center;
   }
 }
 
 .suggestions__item {
+  margin-right: 40px;
+  margin-bottom: 40px;
   padding: 7px;
   width: 31%;
   background-color: $white;
 
   z-index: 1;
 
+  &:nth-of-type(3n) {
+    margin-right: 0;
+  }
+
   @media (max-width: $tablet-width) {
+    margin-right: 0;
     margin-bottom: 40px;
     width: 65%;
   }
@@ -67,6 +76,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    margin-bottom: 9px;
     font-size: 22px;
     line-height: 110.16%;
   }
@@ -77,11 +87,15 @@
   margin-bottom: 64px;
   padding: 0;
 
+  width: 125px;
+
   font-size: 16px;
   line-height: 150%;
   font-weight: 400;
 
   color: #495a7d;
+
+  text-align: center;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 65px;
@@ -103,7 +117,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 29px;
+    margin-bottom: 30px;
+    width: 49%;
   }
 }
 
@@ -137,7 +152,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-right: 10px;
+    margin-right: 8px;
     font-size: 48px;
 
     &::after {

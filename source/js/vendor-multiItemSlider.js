@@ -41,11 +41,13 @@ function _isElementVisible(element) {
       _transform = 0,
       _step = _itemWidth / _wrapperWidth * 100,
       _items = [],
+
+
       _interval = 0,
       _states = [
-        { active: false, minWidth: 0, count: 1 },
-        { active: false, minWidth: 576, count: 2 },
-        { active: false, minWidth: 992, count: 3 },
+        { active: false, minWidth: 320, count: 1 },
+        { active: false, minWidth: 768, count: 2 },
+        { active: false, minWidth: 1199, count: 3 },
         { active: false, minWidth: 1200, count: 4 },
       ],
       _config = {
@@ -115,6 +117,7 @@ function _isElementVisible(element) {
 
     var _transformItem = function (direction) {
       var nextItem;
+
       if (!_isElementVisible(_mainElement)) {
         return;
       }

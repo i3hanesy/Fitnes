@@ -1,5 +1,6 @@
 .narrative {
   display: flex;
+  padding-bottom: 85px;
 
   width: 500px;
   flex-direction: column;
@@ -8,6 +9,7 @@
   background-color: #ed0233;
 
   @media (max-width: $tablet-width) {
+    padding-bottom: 50px;
     width: 292px;
   }
 
@@ -18,7 +20,7 @@
 
 .narrative__wrapper {
   display: flex;
-  padding-top: 79px;
+  padding-top: 80px;
   width: 343px;
   flex-direction: row;
   justify-content: space-between;
@@ -26,11 +28,11 @@
 
   @media (max-width: $tablet-width) {
     padding-top: 46px;
-    width: 70%;
+    width: 69%;
   }
 
   @media (max-width: $mobile-width) {
-    padding-bottom: 50px;
+    padding-top: 45px;
   }
 }
 

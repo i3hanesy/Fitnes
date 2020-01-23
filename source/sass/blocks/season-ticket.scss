@@ -1,6 +1,6 @@
 .season-ticket {
   padding-top: 115px;
-  padding-bottom: 125px;
+  padding-bottom: 84px;
 
   background-color: $gray;
 
@@ -18,8 +18,6 @@
 .season-ticket__wrapper {
   position: relative;
   display: flex;
-  padding-left: 103px;
-  padding-right: 103px;
 
   max-width: 1366px;
   flex-direction: column;
@@ -30,7 +28,7 @@
     position: absolute;
 
     right: -184px;
-    bottom: -270px;
+    bottom: -230px;
 
     width: 470px;
     height: 494px;
@@ -91,7 +89,7 @@
   font-weight: 700;
   font-size: 49px;
   line-height: 49px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
 
   color: $dark-blue;
 
@@ -147,6 +145,16 @@
 
   &:last-of-type {
     padding-right: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-right: 27px;
+    padding-left: 27px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 23px;
+    padding-left: 23px;
   }
 }
 

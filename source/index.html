@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Фитнес</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!--  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Лучший тренажерный зал поколения!!!"/>
   <meta name="format-detection" content="telephone=no">
@@ -22,9 +23,11 @@
     <div class="header__wrapper container">
       <div class="header-top">
         <div class="header-top__logo">
-          <svg width="89" height="20"  viewBox="0 0 89 20">
-            <use xlink:href="#icon-logo"></use>
-          </svg>
+          <a href="index.html">
+            <svg width="89" height="20"  viewBox="0 0 89 20">
+              <use xlink:href="#icon-logo"></use>
+            </svg>
+          </a>
         </div>
         <div class="header-top__phone">
           <a href="tel:88005555555">8-800-555-55-55</a>
@@ -34,9 +37,13 @@
         <div class="banner__description">
           <span>Омск</span>
           <h1>Фитнес центр</h1>
-          <p>Тренажёрный зал Групповые занятия Кардио-зона</p>
+          <ul>
+            <li>Тренажёрный зал</li>
+            <li>Групповые занятия</li>
+            <li>Кардио-зона</li>
+          </ul>
           <div class="banner__description-button">
-            <a href="#season-ticket">Купить абонемент</a>
+            <a href="#tickets">Купить абонемент</a>
           </div>
         </div>
         <div class="banner__image image">
@@ -121,7 +128,7 @@
         </div>
       </div>
     </section>
-    <section id="season-ticket" class="season-ticket">
+    <section id="tickets" class="season-ticket">
       <div class="season-ticket__wrapper container">
         <h2>Абонементы</h2>
         <div class="season-ticket__terms">
@@ -245,7 +252,9 @@
     </section>
     <section class="coachs">
       <div class="coachs__wrapper container">
+          <div>
         <h2>Тренеры</h2>
+        </div>
         <div class="coachs__slider slider">
           <div class="slider__items">
           <div class="slider__wrapper">
@@ -355,28 +364,30 @@
       <div class="advantage__wrapper container">
         <h2>Наши преимущества</h2>
         <div class="advantage__information">
-          <div class="advantage__information-top advantage__information-top--left">
-            <div class="advantage__information-number">
-              <div class="advantage__information-image">
-                <img src="img/900.svg" width="108" height="49" alt="900">
+          <div class="advantage__information-top">
+            <div class="advantage__information-item advantage__information-item--top-left">
+              <div class="advantage__information-number">
+                <div class="advantage__information-image">
+                  <img src="img/900.svg" width="108" height="49" alt="900">
+                </div>
+                <span>кв/м</span>
               </div>
-              <span>кв/м</span>
-            </div>
-            <div class="advantage__information-description">
-              <h3>Площадь</h3>
-              <p>Занимайтесь без очередей и толпучки</p>
-            </div>
-          </div>
-          <div class="advantage__information-top advantage__information-top--right">
-            <div class="advantage__information-number">
-              <div class="advantage__information-image">
-                <img src="img/70.svg" width="72" height="49" alt="70">
+              <div class="advantage__information-description">
+                <h3>Площадь</h3>
+                <p>Занимайтесь без очередей и толпучки</p>
               </div>
-              <span>Машин</span>
             </div>
-            <div class="advantage__information-description">
-              <h3>Собственная парковка</h3>
-              <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+            <div class="advantage__information-item advantage__information-item--top-right">
+              <div class="advantage__information-number">
+                <div class="advantage__information-image">
+                  <img src="img/70.svg" width="72" height="49" alt="70">
+                </div>
+                <span>Машин</span>
+              </div>
+              <div class="advantage__information-description">
+                <h3>Собственная парковка</h3>
+                <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+              </div>
             </div>
           </div>
           <div class="advantage__information-center">
@@ -386,28 +397,30 @@
               <p>Современные тренажеры на все группы мышц</p>
             </div>
           </div>
-          <div class="advantage__information-bottom advantage__information-bottom--left">
-            <div class="advantage__information-number">
-              <div class="advantage__information-image">
-                <img src="img/350.svg" width="108" height="49" alt="350">
+          <div class="advantage__information-bottom">
+            <div class="advantage__information-item advantage__information-item--bottom-left">
+              <div class="advantage__information-number">
+                <div class="advantage__information-image">
+                  <img src="img/350.svg" width="108" height="49" alt="350">
+                </div>
+                <span>мест</span>
               </div>
-              <span>мест</span>
-            </div>
-            <div class="advantage__information-description">
-              <h3>Комфорт</h3>
-              <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-            </div>
-          </div>
-          <div class="advantage__information-bottom advantage__information-bottom--right">
-            <div class="advantage__information-number">
-              <div class="advantage__information-image">
-                <img src="img/5+.svg" width="70" height="49" alt="5+">
+              <div class="advantage__information-description">
+                <h3>Комфорт</h3>
+                <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
               </div>
-              <span>лет</span>
             </div>
-            <div class="advantage__information-description">
-              <h3>Тренерский опыт</h3>
-              <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+            <div class="advantage__information-item advantage__information-item--bottom-right">
+              <div class="advantage__information-number">
+                <div class="advantage__information-image">
+                  <img src="img/5+.svg" width="70" height="49" alt="5+">
+                </div>
+                <span>лет</span>
+              </div>
+              <div class="advantage__information-description">
+                <h3>Тренерский опыт</h3>
+                <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+              </div>
             </div>
           </div>
         </div>
@@ -416,6 +429,7 @@
     <section class="stock">
       <h2>Акции</h2>
       <div class="stock__warapper container">
+        <div class="stock__banner-wrapper">
         <div class="stock__banner">
           <div class="stock__banner-information">
             <h3>Год</h3>
@@ -455,7 +469,7 @@
               </picture>
             </div>
           </div>
-
+        </div>
         </div>
 
         <div class="stock__items">
@@ -532,11 +546,11 @@
           <form method="post" enctype="multipart/form-data" autocomplete="off">
           <h2>Бесплатное занятие</h2>
             <label for="user-name">Имя
-              <input type="text" name="user-name" id="user-name" placeholder="Имя">
+              <input type="text" name="user-name" id="user-name" required placeholder="Имя">
             </label>
 
             <label for="user-phone">Телефон
-              <input type="tel" name="user-phone" id="user-phone" placeholder="Телефон">
+              <input type="tel" name="user-phone" id="user-phone" minlength="16" required placeholder="Телефон">
             </label>
             <div class="form__button">
               <button type="submit">Отправить</button>
@@ -578,9 +592,11 @@
       <h2 class="visually-hidden">Навигация</h2>
       <div class="footer__bottom-wrapper container">
         <div class="footer__logo">
-          <svg width="89" height="20"  viewBox="0 0 89 20">
-            <use xlink:href="#icon-logo"></use>
-          </svg>
+          <a href="index.html">
+            <svg width="89" height="20"  viewBox="0 0 89 20">
+              <use xlink:href="#icon-logo"></use>
+            </svg>
+          </a>
         </div>
         <div class="footer__bottom-navigation footer__bottom-navigation--desktop">
           <ul>
@@ -595,7 +611,7 @@
         <div class="footer__bottom-navigation footer__bottom-navigation--mobile">
           <ul>
             <li>
-              <a>
+              <a href="index.html">
                 <svg width="68" height="15"  viewBox="0 0 89 20">
                   <use xlink:href="#icon-logo"></use>
                 </svg>

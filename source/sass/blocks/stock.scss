@@ -72,6 +72,10 @@
     margin-bottom: 30px;
     width: 100%;
     justify-content: space-between;
+
+    &-wrapper {
+      width: 100%;
+    }
   }
 
   @media (max-width: $mobile-width) {
@@ -112,17 +116,6 @@
   line-height: 156%;
 
   color: $white;
-
-  @media (max-width: $tablet-width) {
-    // margin-bottom: 0;
-    // width: 120px;
-    // font-size: 52px;
-    // line-height: 52px;
-  }
-
-  // @media (max-width: $mobile-width) {
-  //   padding-top: 68px;
-  // }
 }
 
 .stock__banner-information b {
@@ -239,11 +232,11 @@
   display: flex;
   width: 48.3%;
   flex-direction: column;
-  justify-content: space-between;
 
   @media (max-width: $tablet-width) {
     width: 100%;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   @media (max-width: $mobile-width) {
@@ -254,6 +247,7 @@
 .stock__item {
   position: relative;
   display: flex;
+  margin-bottom: 40px;
   padding-top: 22px;
   padding-right: 36px;
   padding-left: 36px;
@@ -279,11 +273,12 @@
   }
 
   @media (max-width: $tablet-width) {
+    margin-bottom: 0;
     width: 48%;
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     padding-top: 34px;
     width: 100%;
 
@@ -341,6 +336,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    line-height: 144%;
     margin-bottom: 89px;
     padding-right: 25px;
     padding-left: 25px;

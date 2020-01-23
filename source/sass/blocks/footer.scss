@@ -15,7 +15,7 @@
 
 .footer__bottom {
   padding-top: 43px;
-  padding-bottom: 37px;
+  padding-bottom: 39px;
   background-color: #030a1a;
 
   @media (max-width: $tablet-width) {
@@ -40,14 +40,11 @@
   }
 }
 
-@media (max-width: $tablet-width) {
-  .footer__logo {
-    padding-top: 2px;
-  }
-}
 
-@media (max-width: $mobile-width) {
-  .footer__logo {
+.footer__logo {
+  padding-top: 2px;
+
+  @media (max-width: $mobile-width) {
     display: none;
   }
 }
@@ -79,6 +76,7 @@
 }
 
 .footer__bottom-navigation {
+  padding-top: 1px;
   padding-left: 26px;
   width: 463px;
 
@@ -109,7 +107,7 @@
   }
 
   .footer__bottom-navigation--mobile svg {
-    margin-top: 2px;
+    margin-top: 3px;
     fill: white;
   }
 
@@ -151,21 +149,23 @@
 }
 
 .footer__bottom-social {
-  width: 110px;
+  margin-right: -12px;
+  width: 122px;
 
   @media (max-width: $tablet-width) {
-    width: 100px;
+    width: 112px;
   }
 
   @media (max-width: $mobile-width) {
     padding-top: 16px;
     padding-right: 17%;
-    width: 100%;
+    width: 215px;
   }
 }
 
 .footer__bottom-social li {
   margin-right: 25px;
+  width: 24px;
 
   &:nth-of-type(3n) {
     margin-right: 0;
@@ -176,11 +176,19 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-right: 35px;
+    margin-right: 33px;
+    width: 32px;
+  }
+}
 
-    &:nth-of-type(3n) {
-      margin-right: 35px;
-    }
+.footer__bottom-social a {
+  display: block;
+  width: 24px;
+  height: 24px;
+
+  @media (max-width: $mobile-width) {
+    width: 32px;
+    height: 32px;
   }
 }
 
