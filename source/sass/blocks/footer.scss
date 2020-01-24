@@ -160,11 +160,16 @@
     padding-top: 16px;
     padding-right: 17%;
     width: 215px;
+
+    & ul {
+      width: 215px;
+    }
   }
 }
 
 .footer__bottom-social li {
   margin-right: 25px;
+  margin-bottom: 15px;
   width: 24px;
 
   &:nth-of-type(3n) {
