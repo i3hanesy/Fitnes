@@ -4879,7 +4879,7 @@ function _isElementVisible(element) {
       _states = [
         { active: false, minWidth: 320, count: 1 },
         { active: false, minWidth: 768, count: 2 },
-        { active: false, minWidth: 1200, count: 3 },
+        { active: false, minWidth: 1199, count: 3 },
         { active: false, minWidth: 1200, count: 4 },
       ],
       _config = {
